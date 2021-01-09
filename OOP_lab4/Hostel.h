@@ -26,6 +26,7 @@ public:
 	int GetNumberGroup() const { return _numberGroup; }
 	int GetRoomNumber() const { return _roomNumber; }
 	int GetEndYearResidence() const { return _endYearResidence; }
+	int GetId() const { return _id; }
 
 	void SetId(int id) { _id = id; }
 

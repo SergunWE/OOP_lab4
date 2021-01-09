@@ -96,7 +96,7 @@ std::vector<Hostel*> HostelStorage::GetHostelByGroupAndYear(int group, int year)
 	std::vector<Hostel*> hos;
 	for (auto& elem : iter->second)
 	{
-		if (_hostelById[elem]->GetEndYearResidence() >= year)
+		if (_hostelById[elem]->GetEndYearResidence() <= year)
 		{
 			hos.push_back(_hostelById[elem]);
 		}
@@ -107,3 +107,4 @@ std::vector<Hostel*> HostelStorage::GetHostelByGroupAndYear(int group, int year)
 		}
 		return hos;
 }
+
