@@ -11,4 +11,3 @@ public:
 private:
 	constexpr static const char* _file = "Hostel.txt";
 };
-
